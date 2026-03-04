@@ -1,0 +1,60 @@
+{
+  "account_memo": {
+    "account_id": "ACC-001",
+    "company_name": "Ben's Electric Solutions",
+    "business_hours": "Monday - Friday, 8 AM - 5 PM (flexible for early appointments if arranged, 6 AM was requested but standard starts 8 AM)",
+    "services_supported": [
+      "Residential electrical work",
+      "Commercial electrical work",
+      "Service calls",
+      "Small jobs",
+      "Odd jobs",
+      "Renovations",
+      "Troubleshooting",
+      "New custom home wiring",
+      "Tenant infill/improvement wiring",
+      "EV charger installations",
+      "Hot tub electrical hookups (running dedicated circuits, GFCI protection, wiring to code)",
+      "Panel changes",
+      "LED lighting upgrades",
+      "Generator connections (requires assessment for sizing and transfer switch)"
+    ],
+    "emergency_definition": "Critical situations for existing property managers/general contractors (e.g., gas station pump failure), or immediate safety hazards for any caller.",
+    "emergency_routing_rules": "For defined emergencies (critical for regular clients or immediate safety hazards), calls should be automatically routed for immediate transfer to Ben (or on-call technician).",
+    "non_emergency_routing_rules": "All other calls should be screened by Clara, details collected, and logged to the dashboard. Notifications (email/text) sent to Ben for review and assignment to team members.",
+    "call_transfer_rules": {
+      "personal_contacts": "Calls from whitelisted personal numbers (e.g., Ben's wife) bypass screening and transfer directly to Ben.",
+      "vip_customers": "Calls from whitelisted VIP customers (strong relationship clients) bypass screening and transfer directly to Ben.",
+      "ask_for_ben": "If a caller asks for Ben (and is not VIP/personal), Clara will politely ask for the purpose of the call before attempting a transfer.",
+      "accounting_inquiries": "If an accounting department were established, invoice-related inquiries would be routed to them (currently handled by Ben/Clara logs).",
+      "emergency_routing": "Defined emergency calls attempt immediate transfer to Ben/on-call."
+    },
+    "integration_constraints": "Jobber integration is in process and coming soon. Current integrations exist with Service Titan, Housecall Pro, Service Fusion, Zen. QuickBooks is used for accounting (invoicing through Jobber).",
+    "after_hours_flow_summary": "Clara operates 24/7. During after-hours, it will confirm if the call is an emergency. If so, it attempts to route to the on-call person. If not an emergency, it collects detailed information and schedules the service for the first available slot during the next business day (after 8 AM), notifying Ben/team via dashboard, email, and text.",
+    "office_hours_flow_summary": "Clara acts as the primary receptionist, answering calls, understanding the caller's purpose, collecting essential service request details (name, address, number, issue, preferred time/date), qualifying jobs, and filtering out sales/spam calls. It can also upsell club memberships. All call details are logged to a dashboard with email/text notifications for Ben to review and assign.",
+    "notes": [
+      "Ben has 30 years experience as an electrician, 8 years running his own business.",
+      "Company is currently a sole proprietor, but plans to incorporate this year.",
+      "Team consists of Ben, three journeymen, one apprentice (seeking another), and two subcontractors. Goal is 5 company vans by year-end.",
+      "Ben is bringing on an Operations Manager/Estimator (Greg) to assist with admin and estimating.",
+      "Ben currently handles all admin, back-end, and quotes, also goes to field for quotes.",
+      "Team members in the field frequently contact Ben for troubleshooting support.",
+      "Previously had a live virtual assistant (~year 2-3 of business) but found it wasn't a good fit and he didn't utilize it effectively.",
+      "No prior experience with AI solutions.",
+      "Current call volume estimate: 20-50 calls/week (includes small customers, regular contractors, inspectors, field guys, and sales calls).",
+      "Interested in Clara Answers for call screening, information capture, and filtering sales calls.",
+      "Initial plan selected: Starter plan at $249/month for 500 minutes, on a 3-month contract (approx. $750 + tax CAD upfront). Price locked for 12 months if renewed.",
+      "Kickoff call scheduled for tomorrow noon (Friday).",
+      "Ben's personal cell number is currently also the business number; he plans to separate them. Clara will be configured via call forwarding.",
+      "Clara will suggest appointment times but will not confirm final bookings as field job durations are unpredictable. Ben/team will confirm in Jobber.",
+      "Clara also mentioned other agents (dispatcher, reminders, reviews, collections, field copilot), but initial focus is on the receptionist agent (Clara Answers)."
+    ],
+    "questions_or_unknowns": [
+      "Exact closing time for standard business hours.",
+      "Full details and benefits of the 'club membership' upsell offering.",
+      "Confirmation on whether Ben has any dedicated 'accounting department' or if he handles all invoice disputes personally (mentioned for routing capabilities, but not confirmed for Ben's setup).",
+      "Specific types of plumbing/gas line connections Ben's Electric Solutions *does* perform for hot tubs (beyond just electrical, which they do).",
+      "Full legal company name for 'Ben's Electric Solutions' upon incorporation."
+    ]
+  }
+}

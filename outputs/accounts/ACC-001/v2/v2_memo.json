@@ -1,0 +1,55 @@
+{
+  "account_memo": {
+    "account_id": "ACC12345",
+    "company_name": "Acme Solutions Inc.",
+    "business_hours": {
+      "monday": { "open": "09:00", "close": "17:00" },
+      "tuesday": { "open": "09:00", "close": "17:00" },
+      "wednesday": { "open": "09:00", "close": "17:00" },
+      "thursday": { "open": "09:00", "close": "17:00" },
+      "friday": { "open": "09:00", "close": "17:00" },
+      "saturday": null,
+      "sunday": null,
+      "timezone": "America/New_York"
+    },
+    "services_supported": [
+      "Technical Support",
+      "Billing Inquiries",
+      "Sales Assistance",
+      "General Information"
+    ],
+    "routing_rules": [
+      {
+        "condition": "inquiry_type == 'Technical Support'",
+        "destination": "queue_tech_support"
+      },
+      {
+        "condition": "inquiry_type == 'Billing'",
+        "destination": "queue_billing"
+      },
+      {
+        "condition": "inquiry_type == 'Sales'",
+        "destination": "queue_sales"
+      },
+      {
+        "condition": "inquiry_type == 'Emergency'",
+        "destination": "emergency_hotline"
+      },
+      {
+        "condition": "default",
+        "destination": "queue_general_inquiries"
+      }
+    ],
+    "emergency_contact": {
+      "name": "Operations Manager",
+      "phone": "+1-800-555-0100",
+      "escalation_policy": "transfer_immediately"
+    },
+    "billing_info": {
+      "plan_type": "Enterprise Platinum",
+      "payment_method": "Auto-Pay (Visa ending 1234)",
+      "next_billing_date": "2024-07-01"
+    },
+    "notes": "Standard customer service protocols apply. VIP clients to be prioritized where possible."
+  }
+}

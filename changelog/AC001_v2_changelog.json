@@ -1,0 +1,8 @@
+{
+"changelog": [
+    {
+      "version": "v2",
+      "date": "2024-06-18",
+      "description": "Updated agent configuration to v2. Incorporated explicit security guardrails against prompt injection and refined system prompt to include distinct Business Hours and After-Hours flows with emergency confirmation logic. Account memo updated with default/example values due to absence of specific update transcript data."
+    }
+}
