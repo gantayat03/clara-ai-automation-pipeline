@@ -1,6 +1,6 @@
 # Clara Answers - AI Agent Configuration Pipeline
 
-**Loom Video Walkthrough:** [Insert Your Loom Link Here]
+**Loom Video Walkthrough:** [(https://www.loom.com/share/6ce8accd30124466bd0b7843a2fd9d73)]
 
 ##  Overview
 This repository contains a zero-cost, end-to-end automation architecture built to scale the deployment of Retell AI voice agents. It transforms unstructured Demo and Onboarding calls into strict, version-controlled JSON configurations (`v1` and `v2`) without manual intervention.
